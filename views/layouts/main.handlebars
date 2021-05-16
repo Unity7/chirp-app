@@ -4,30 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Tech News</title>
+  <title>Tech Times</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
   <div class="wrapper">
+    <div class="nav">
     <header>
       <h1>
-        <a href="/">Just Tech News</a>
+        <div class="logo"><img src="assets/logo2.png"></div>
       </h1>
       <nav>
+        <a href="/">Home</a>
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <a href="/dashboard">Dashboard</a>
+        <button id="logout" class="btn-no-style">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login">Login</a>
         {{/if}}
       </nav>
     </header>
+    </div>
     <main>
       {{{ body }}}
     </main>
     <footer>
-      Thanks for visiting!
+      Copyright © 2021 Tech Times
     </footer>
   </div>
   
