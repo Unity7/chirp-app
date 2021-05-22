@@ -2,178 +2,163 @@ const { Comment } = require("../models");
 
 const commentdata = [
   {
-    comment_text: "Nunc rhoncus dui vel sem.",
+    comment_text: "Great! I love this!",
     user_id: 6,
     post_id: 1,
   },
   {
-    comment_text:
-      "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+    comment_text: "Kudos to you!",
     user_id: 6,
     post_id: 8,
   },
   {
-    comment_text: "Aliquam erat volutpat. In congue.",
+    comment_text: "This is a great quote!",
     user_id: 3,
     post_id: 10,
   },
   {
-    comment_text:
-      "Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+    comment_text: "You are awesome!",
     user_id: 3,
     post_id: 18,
   },
   {
-    comment_text: "In hac habitasse platea dictumst.",
+    comment_text: "I can relate to this!",
     user_id: 7,
     post_id: 5,
   },
   {
-    comment_text: "Vivamus vestibulum sagittis sapien.",
+    comment_text: "Awesome!",
     user_id: 1,
     post_id: 20,
   },
   {
-    comment_text:
-      "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+    comment_text: "I agree with this 100%",
     user_id: 6,
     post_id: 7,
   },
   {
-    comment_text: "Sed vel enim sit amet nunc viverra dapibus.",
+    comment_text: "If you think about it; it makes a lot of sense",
     user_id: 7,
     post_id: 4,
   },
   {
-    comment_text:
-      "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat.",
+    comment_text: "I think I found my new profile quote!",
     user_id: 6,
     post_id: 12,
   },
   {
-    comment_text: "Morbi a ipsum.",
+    comment_text: "Do it for the memes!",
     user_id: 6,
     post_id: 20,
   },
   {
-    comment_text:
-      "Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+    comment_text: "Let's get it!",
     user_id: 3,
     post_id: 14,
   },
   {
-    comment_text: "Donec ut mauris eget massa tempor convallis.",
+    comment_text: "This is really cool",
     user_id: 5,
     post_id: 4,
   },
   {
-    comment_text:
-      "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+    comment_text: "I don't understand this at all...",
     user_id: 4,
     post_id: 9,
   },
   {
-    comment_text:
-      "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+    comment_text: "I sit just me or is anyone else lost? Haha",
     user_id: 5,
     post_id: 14,
   },
   {
-    comment_text: "Quisque porta volutpat erat.",
+    comment_text: "What?",
     user_id: 6,
     post_id: 2,
   },
   {
-    comment_text: "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+    comment_text: "Ok I can dig it",
     user_id: 8,
     post_id: 2,
   },
   {
-    comment_text:
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
+    comment_text: "What do you mean by this?",
     user_id: 2,
     post_id: 20,
   },
   {
-    comment_text:
-      "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
+    comment_text: "Great post!",
     user_id: 4,
     post_id: 11,
   },
   {
     comment_text:
-      "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
+      "Awesome, I can relate to this quote and will keep it with me.",
     user_id: 5,
     post_id: 13,
   },
   {
-    comment_text:
-      "Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+    comment_text: "That is what I am talking about!",
     user_id: 9,
     post_id: 16,
   },
   {
-    comment_text: "Curabitur convallis.",
+    comment_text: "Yessir!",
     user_id: 6,
     post_id: 4,
   },
   {
-    comment_text:
-      "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    comment_text: "keep up the great work!",
     user_id: 4,
     post_id: 10,
   },
   {
-    comment_text: "Morbi non quam nec dui luctus rutrum.",
+    comment_text: "that's cool",
     user_id: 3,
     post_id: 8,
   },
   {
-    comment_text:
-      "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.",
+    comment_text: "it's alright",
     user_id: 8,
     post_id: 10,
   },
   {
-    comment_text:
-      "Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+    comment_text: "Guess what?",
     user_id: 1,
     post_id: 15,
   },
   {
-    comment_text:
-      "Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend.",
+    comment_text: "Yes I can agree",
     user_id: 5,
     post_id: 3,
   },
   {
-    comment_text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    comment_text: "No I cannot agree",
     user_id: 1,
     post_id: 15,
   },
   {
-    comment_text: "Nam tristique tortor eu pede.",
+    comment_text: "Has someone else looked into this?",
     user_id: 4,
     post_id: 16,
   },
   {
-    comment_text:
-      "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+    comment_text: "Thank you for sharing...",
     user_id: 4,
     post_id: 18,
   },
   {
-    comment_text: "Proin eu mi. Nulla ac enim.",
+    comment_text: "Thanks for posting",
     user_id: 4,
     post_id: 10,
   },
   {
-    comment_text: "Sed ante. Vivamus tortor.",
+    comment_text: "Nice post",
     user_id: 7,
     post_id: 5,
   },
   {
-    comment_text: "Aliquam quis turpis eget elit sodales scelerisque.",
+    comment_text: "Kudos on your post.",
     user_id: 10,
     post_id: 1,
   },
@@ -183,28 +168,27 @@ const commentdata = [
     post_id: 19,
   },
   {
-    comment_text: "Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+    comment_text: "Awesome thoughts",
     user_id: 5,
     post_id: 3,
   },
   {
-    comment_text:
-      "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.",
+    comment_text: "This is very useful, thank you.",
     user_id: 10,
     post_id: 14,
   },
   {
-    comment_text: "Maecenas ut massa quis augue luctus tincidunt.",
+    comment_text: "Awesome, I come here for this",
     user_id: 10,
     post_id: 8,
   },
   {
-    comment_text: "Cras in purus eu magna vulputate luctus.",
+    comment_text: "niceeeeeeeeeeeeeeee",
     user_id: 10,
     post_id: 11,
   },
   {
-    comment_text: "Etiam vel augue. Vestibulum rutrum rutrum neque.",
+    comment_text: "I understand",
     user_id: 8,
     post_id: 5,
   },
@@ -214,64 +198,57 @@ const commentdata = [
     post_id: 19,
   },
   {
-    comment_text:
-      "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.",
+    comment_text: "We will have to wait and see",
     user_id: 9,
     post_id: 19,
   },
   {
-    comment_text:
-      "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+    comment_text: "Alright that sounds correct",
     user_id: 5,
     post_id: 4,
   },
   {
-    comment_text:
-      "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
+    comment_text: "This is in my wheelhouse",
     user_id: 2,
     post_id: 11,
   },
   {
-    comment_text: "Vestibulum ac est lacinia nisi venenatis tristique.",
+    comment_text: "This should have been said sooner",
     user_id: 4,
     post_id: 6,
   },
   {
-    comment_text: "Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+    comment_text: "You can say this again",
     user_id: 9,
     post_id: 6,
   },
   {
-    comment_text:
-      "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.",
+    comment_text: "awesome post. I will upvote.",
     user_id: 7,
     post_id: 9,
   },
   {
-    comment_text: "Integer ac leo. Pellentesque ultrices mattis odio.",
+    comment_text: "Take my upvote!",
     user_id: 4,
     post_id: 19,
   },
   {
-    comment_text:
-      "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+    comment_text: "nice ! upvoted",
     user_id: 10,
     post_id: 1,
   },
   {
-    comment_text:
-      "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus.",
+    comment_text: "This sounds familiar.",
     user_id: 2,
     post_id: 19,
   },
   {
-    comment_text: "Proin risus. Praesent lectus.",
+    comment_text: "I have heard this somewhere before",
     user_id: 10,
     post_id: 1,
   },
   {
-    comment_text:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus.",
+    comment_text: "We will see about that",
     user_id: 10,
     post_id: 12,
   },
