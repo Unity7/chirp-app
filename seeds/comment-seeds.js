@@ -163,7 +163,7 @@ const commentdata = [
     post_id: 1,
   },
   {
-    comment_text: "Donec quis orci eget orci vehicula condimentum.",
+    comment_text: "Very nice",
     user_id: 3,
     post_id: 19,
   },
