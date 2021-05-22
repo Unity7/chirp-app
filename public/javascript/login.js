@@ -16,6 +16,8 @@ async function loginFormHandler(event) {
 
     if (response.ok) {
       document.location.replace("/dashboard/");
+      logstatus = 1;
+      console.log(logstatus);
     } else {
       alert(response.statusText);
     }

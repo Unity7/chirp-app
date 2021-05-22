@@ -6,6 +6,8 @@ async function logout() {
 
   if (response.ok) {
     document.location.replace("/");
+    logstatus = 0;
+    console.log(logstatus);
   } else {
     alert(response.statusText);
   }
