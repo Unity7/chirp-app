@@ -1,0 +1,12 @@
+<div class="comment-container">
+<div class="row">
+  {{#each this}}
+    <div class="col s12 light-blue darken-4 comment-title">
+      @{{user.username}} on {{format_date created_at}}
+    </div>
+    <div class="col s12 light-blue lighten-4 comment-text">
+      {{comment_text}}
+    </div>
+  {{/each}}
+</div>
+</div>
