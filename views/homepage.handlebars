@@ -1,0 +1,16 @@
+  {{#if loggedIn}}
+  <form class="new-post-form">
+    <div>
+      <input placeholder="What's on your mind?" type="text" id="post-title" name="post-title" />
+    </div>
+    <button type="submit" class="btn">Chirp</button>
+  </form>
+  <script src="/javascript/add-post.js"></script>
+  <br>
+  {{/if}}
+  
+  {{#each posts as |post|}}
+
+    {{> post-info post }}
+
+  {{/each}}

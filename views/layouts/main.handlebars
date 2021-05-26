@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chirp</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <div class="row">
+        <div class="col s12 center">
+      <a href="/" class="brand-logo center"><img src="/assets/logo3.png"></a></div>
+      </div>
+    </div>
+  </nav>
+  </div>
+    <main>
+        <div class="row">
+          <div class="col s2">
+        <a href="/">
+        <div class="row">
+          <div class="col s12 center menuicon">
+              <i class="material-icons">home</i>
+  </div>
+<div class="col s12 center menuicon">Home</div>
+</div>
+</a>      
+        {{#if loggedIn}}
+        <a href="/dashboard"> 
+         <div class="row">
+           <div class="col s12 center menuicon">
+          <i class="material-icons">person</i>
+          </div>
+<div class="col s12 center menuicon">Profile</div>
+</div>
+</a>
+        <a href="#" id="logout" class="btn-no-style">
+         <div class="row">
+           <div class="col s12 center menuicon">
+                       <i class="material-icons">lock_open</i>
+    </div>
+           <div class="col s12 center menuicon">Logout</button></div>
+         </div>
+         </a>
+        {{else}}
+        <a href="/login">
+        <div class="row">
+          <div class="col s12 center menuicon">
+          <i class="material-icons">lock</i>
+          </div>
+<div class="col s12 center menuicon">Login</div>
+</div>
+</a>
+        {{/if}}
+        </div>
+          <div class="col s10">
+      {{{ body }}}
+      </div>
+        </div>
+        
+    </main>
+   <footer class="page-footer light-blue lighten-1
+">
+
+            <div class="container center light-blue lighten-1">Copyright © 2021 Chirp
+
+          </div>
+        </footer>
+  </div>
+  
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/javascript/idle.js"></script>
+  {{/if}}
+
+</body>
+
+</html>
