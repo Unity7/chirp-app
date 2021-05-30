@@ -14,7 +14,8 @@ The application is a social media platform that allows users to share their thou
 
 Clone the Repo\
 Run npm install in your terminal\
-Run server.js
+Run server.js\
+https://chirp-uclabootcamp.herokuapp.com/
 
 ## Usage
 
